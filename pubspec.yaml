@@ -2,7 +2,7 @@ name: tellme_alert
 description: Customizable popup for flutter.
 version: 0.0.1
 author: developer@tellme.gen.tr
-homepage: https://tellme.gen.tr
+homepage: https://github.com/TellMeCorp/tellme-alert.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
