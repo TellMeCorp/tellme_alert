@@ -1,6 +1,6 @@
 
 # tellme_alert
-This package helps you to create color palette as horizontal list. Able to detech which color picked and returns it.
+Customizable popup for flutter.
 
 <p float="left">
 <img src="https://raw.githubusercontent.com/TellMeCorp/tellme-alert/main/example/images/Screenshot_1617999487.png?token=AFPPHGPUY2FHB3Z4NED6RH3APHY5Y" width = 150>
@@ -46,18 +46,16 @@ import  'package:tellme_alert/tellme_alert.dart';
 
   
 ```dart
-TextButton(
-    onPressed: () => TellMeAlert(
+//Default confirmed
+TellMeAlert(
     context: context,
     title: "Lorem ipsum title",
     content:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     onConfirm: () => print("Default confirmed"),
-    ),
-    child: Text("Default alert"),
 ),
-TextButton(
-    onPressed: () => TellMeAlert(
+//Aligned
+TellMeAlert(
     context: context,
     alignment: Alignment.topCenter,
     borderRadius: 10,
@@ -67,11 +65,9 @@ TextButton(
     content:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     onConfirm: () => print("Aligned confirmed"),
-    ),
-    child: Text("Aligned"),
 ),
-TextButton(
-    onPressed: () => TellMeAlert(
+//Show false
+TellMeAlert(
     context: context,
     alignment: Alignment.bottomCenter,
     borderRadius: 15,
@@ -82,11 +78,9 @@ TextButton(
     confirmButtonColor: TellMeColors.blue_500,
     title: "Lorem ipsum title",
     onConfirm: () => print("Disabled confirmed"),
-    ),
-    child: Text("Disabled element"),
 ),
-TextButton(
-    onPressed: () => TellMeAlert(
+//Custom Widget
+TellMeAlert(
     context: context,
     padding: const EdgeInsets.all(70),
     child: Container(
